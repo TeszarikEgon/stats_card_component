@@ -23,15 +23,15 @@ Users should be able to:
 ### Screenshot
 
 Desktop view:
-![](./screenshot-desktop.jpg)
+![](screenshot-desktop.jpg)
 
 Mobile view:
-![](./screenshot-mobile.jpg)
+![](screenshot-mobile.jpg)
 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://mentorstatscard.netlify.app/)
+- Live Site URL: [Click here](https://mentorstatscard.netlify.app/)
 
 ## My process
 
