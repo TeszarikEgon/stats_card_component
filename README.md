@@ -23,10 +23,10 @@ Users should be able to:
 ### Screenshot
 
 Desktop view:
-![](screenshot-desktop.jpg)
+![](/screenshot-desktop.jpg)
 
 Mobile view:
-![](screenshot-mobile.jpg)
+![](/screenshot-mobile.jpg)
 
 
 ### Links
