@@ -22,11 +22,9 @@ Users should be able to:
 
 ### Screenshot
 
-Desktop view:
-![](/screenshots/screenshot-desktop.png)
 
-Mobile view:
-![](/screenshots/screenshot-mobile.png)
+![Desktop view](/screenshots/screenshot-desktop.png?raw=true "Optional Title")
+![Mobile] view](/screenshots/screenshot-mobile.png?raw=true "Optional Title")
 
 
 ### Links
