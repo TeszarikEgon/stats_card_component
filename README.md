@@ -22,9 +22,13 @@ Users should be able to:
 
 ### Screenshot
 
+Desktop view:
 
-![Desktop view](/screenshots/screenshot-desktop.png?raw=true "Optional Title")
-![Mobile] view](/screenshots/screenshot-mobile.png?raw=true "Optional Title")
+![screenshot-desktop](https://user-images.githubusercontent.com/55054137/211656059-8deb15aa-8b5b-4020-b82e-57025674df4b.png)
+
+Mobile view:
+
+![screenshot-mobile](https://user-images.githubusercontent.com/55054137/211656184-61de7ed3-9078-4984-a088-9f0e2254b2b1.png)
 
 
 ### Links
