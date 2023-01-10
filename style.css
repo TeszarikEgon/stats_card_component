@@ -1,0 +1,291 @@
+:root{
+
+/*Primary*/
+
+  --VeryDarkBlue: hsl(233, 47%, 7%);
+  --DarkDesaturatedBlue: hsl(244, 38%, 16%);
+  --SoftViolet: hsl(277, 64%, 61%);
+
+/*Neutral*/
+
+  --White: hsl(0, 0%, 100%);
+  --pointSevenFiveWhite: hsla(0, 0%, 100%, 0.75);
+  --pointSixWhite: hsla(0, 0%, 100%, 0.6);
+
+  /*Fonts*/
+  --Lexend: 'Lexend Deca', sans-serif;
+  --Inter: 'Inter', sans-serif;
+}
+
+
+/*
+  0. CSS Reset ------------------------ 
+  1. General Styles -------------------
+  2. Main Body Styles -----------------
+      -Layout--
+      -Content--
+      -Achievements Grid Layout--
+      -Image Appearance--
+  3. Responsive Styles-----------------
+*/
+
+
+/*-----------------------------------------
+0. CSS Reset
+------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-----------------------------------------
+1. General styles 
+------------------------------------------*/
+
+html{
+  font-size: 62.5%;
+}
+
+
+
+/*------------------------------------------
+2. Main Body Styles
+--------------------------------------------*/
+
+
+/* ---Layout--- */
+
+body {
+  min-height: 100vh;
+  background-color: var(--VeryDarkBlue);
+  
+  font-size: 1.5rem;
+  font-family: var(--Inter);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  height: 445px;
+  display: flex;
+
+  
+}
+
+
+/* ---Content--- */
+
+.card-info{
+  width:570px;
+  padding: 4.8em;
+
+  background-color: var(--DarkDesaturatedBlue);
+  border-radius: 10px 0 0 10px;
+}
+
+.card-heading{
+  margin-bottom:.7em;
+  color: var(--White);
+  
+  font-size: 3.54rem;
+  font-weight: 700;
+}
+
+.card-heading-highlight{
+  color: var(--SoftViolet);
+
+}
+.card-paragraph{
+  width: 90%;
+  color: var(--pointSevenFiveWhite);
+  line-height: 2.5rem;
+}
+
+.card-achievements h2 {
+  color: var(--pointSixWhite);
+  text-transform: uppercase;
+
+  font-family: var(--Lexend);
+  font-size: 1.22rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+
+  align-self: end;
+}
+
+
+
+.card-achievements p{
+  color: var(--White); 
+
+  font-size: 2.3rem;
+  font-family: var(--Inter);
+  font-weight: 700;
+}
+
+/* ---Achievements Grid Layout--- */
+
+.card-achievements{
+  margin-top: 5em;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: .8fr .8fr;
+}
+
+.achievement-companies{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.achievement-companies-number{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.achievement-templates{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.achievement-templates-number{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.achievement-queries{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.achievement-queries-numbers{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+
+/* ---Image Appearance--- */
+
+.card-image-overlay{
+  height: 100%;
+  width: 540px;
+  background-color: var(--SoftViolet);
+
+  border-radius: 0 10px 10px 0;
+}
+
+.card-image{
+  width: 100%;
+  height: 100%;
+
+  background-image: url('images/image-header-desktop.jpg');
+  mix-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 10px 10px 0;
+
+}
+
+
+/*------------------------------------------
+3. Responsive Styles
+--------------------------------------------*/
+
+@media screen and (max-width: 1220px){
+
+  .card-info,
+  .card-image-overlay
+  {
+    width: 350px;
+  }
+  .card-info{
+    padding: 3em;
+  }
+
+  html{
+    font-size: 55%;
+  }
+  .card-paragraph{
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 760px){
+  body{
+    text-align: center;
+  }
+  .card{
+    min-height: 60vh;
+    flex-direction: column;
+  }
+  .card-info{
+    padding: 3em 2rem;
+  }
+  .card-heading{
+    font-size: 2.8rem;
+  }
+  .card-paragraph{
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .card-achievements{
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    
+  }
+
+  .achievement-companies{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .achievement-companies-number{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .achievement-templates{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .achievement-templates-number{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .achievement-queries{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .achievement-queries-numbers{
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
+
+  .card-image-overlay{
+    height: 30%;
+    order: 1;
+    border-radius: 10px 10px 0 0;
+  }
+  .card-image{
+    background-image: url('images/image-header-mobile.jpg');
+    border-radius: 10px 10px 0 0;
+  }
+  .card-info{
+    height: 70%;
+    order: 2;
+    border-radius: 0 0 10px 10px;
+  }
+  
+}
+
+@media screen and (max-width: 420px){
+
+  .card{
+    min-height: 75vh;
+  }
+  .card-info,
+  .card-image-overlay
+  {
+    width: 300px;
+  }
+}
